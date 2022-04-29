@@ -59,8 +59,10 @@ namespace Namespace {
         }
 
         public static void make_move(string player, string board) {
-            var square = Convert.ToInt32(input("{player}'s turn to choose a square (1-9): "));
-            board[square - 1] = player;
+            int square = Console.ReadLine();
+            Console.WriteLine(player + "'s turn to choose a square (1-9): ");
+            // var square = Convert.ToInt32(input("{player}'s turn to choose a square (1-9): "));
+            // board[square - 1] = player;
         }
 
         public static string next_player(string current) {
