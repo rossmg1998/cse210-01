@@ -3,7 +3,7 @@
 /* Tic-Tac-Toe
 Author: Ross Gardner */
 
-namespace Namespace {
+namespace cse210_01 {
 
     public static class Module {
 
@@ -64,9 +64,7 @@ namespace Namespace {
             string square = Console.ReadLine();
 
             board[Convert.ToInt32(square) - 1] = player;
-            // Console.WriteLine(player + "'s turn to choose a square (1-9): ");
-            // var square = Convert.ToInt32(input("{player}'s turn to choose a square (1-9): "));
-            // board[square - 1] = player;
+            
         }
 
         public static string next_player(string current) {
